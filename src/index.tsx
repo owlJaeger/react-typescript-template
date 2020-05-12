@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React from 'react';
 import { render, hydrate } from 'react-dom';
-import './index.css';
+import './style/index.css';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { app as App } from './components/App';
 import * as serviceWorker from './service-worker';
