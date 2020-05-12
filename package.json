@@ -20,10 +20,11 @@
   },
   "scripts": {
     "lint": "eslint --ext .tsx,.ts src/",
-    "start": "npm run lint && react-scripts start",
-    "start:electron": "npm run lint && electron .",
+    "start": "react-scripts start",
+    "start:electron": "electron .",
     "start:production": "serve build",
-    "build": "npm run lint && react-scripts build",
+    "prebuild": "npm run lint",
+    "build": "react-scripts build",
     "postbuild": "react-snap",
     "test": "npm run lint && react-scripts test --watchAll=false"
   },
